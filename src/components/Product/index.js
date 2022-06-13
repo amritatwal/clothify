@@ -35,20 +35,26 @@ const Product = ({ image, id, title, desc, price, updateBasket }) => {
         >
           {title}
         </Text>
-        <Text mb=".8em" fontWeight="800" fontSize={{ base: '1em' }} color="grey">
+        <Text
+          mb=".8em"
+          fontWeight="800"
+          fontSize={{ base: '1em' }}
+          color="grey"
+        >
           £{price}
         </Text>
-        <Text
-          textOverflow="ellipsis"
-          overflow="hidden"
-          whiteSpace="wrap"
-          fontSize={{ base: '.8em' }}
-          height={{ base: '100%', md: '10em' }}
-        >
-          {desc}
-        </Text>
+        <Box height={{ base: '10em', md: '10em' }}>
+          <Text
+            textOverflow="ellipsis"
+            overflow="hidden"
+            whiteSpace="wrap"
+            fontSize={{ base: '.8em' }}
+          >
+            {desc}
+          </Text>
+        </Box>
         <Button
-          mt="1em"
+          mt={{ base: '2em', sm: '1em' }}
           onClick={handleClick}
           w="10em"
           alignSelf="center"

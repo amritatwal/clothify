@@ -1,5 +1,4 @@
 import { Flex } from '@chakra-ui/react';
-import { render } from '@testing-library/react';
 import { useEffect, useState } from 'react';
 import Product from '../src/components/Product';
 import API_URL from '../config';
@@ -10,9 +9,8 @@ export default function Home({ updateBasket }) {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch(
-          'https://fakestoreapi.com/products?limit=10'
-        );
+        console.log(API_URL);
+        const response = await fetch(`${API_URL}/?limit=10`);
         const data = await response.json();
         console.log(data);
         setProducts([products, ...data]);
