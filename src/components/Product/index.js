@@ -1,7 +1,11 @@
 import React from 'react';
 import { Flex, Text, Image, Box, Button } from '@chakra-ui/react';
 
+// For consistency, a re-usable component was created for each product's data to be rendered within. The props being passed down are required to display the relevant data.
+
 const Product = ({ image, id, title, desc, price, updateBasket }) => {
+  // When an online customer clicks on the 'add to basket' button, the product's information is stored in an object which is passed into updateBasket() as an argument.
+  // The default quantity of any product is 1.
   function handleClick() {
     const item = {
       id: id,
@@ -35,6 +39,7 @@ const Product = ({ image, id, title, desc, price, updateBasket }) => {
         >
           {title}
         </Text>
+        {/* Design: the price is displayed in bold and grey in order for it to stand out */}
         <Text
           mb=".8em"
           fontWeight="800"

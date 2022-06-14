@@ -1,21 +1,9 @@
 import React from 'react';
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
-  Flex,
-  Text,
-  Image,
-  Box,
-  Heading,
-} from '@chakra-ui/react';
+import { Flex, Box, Heading } from '@chakra-ui/react';
 import ShoppingBasket from '../Basket';
+
+// The navigation bar currently only displays a name and the mini-basket.
+// The props being passed in - basket and removeItem - are necessary for <ShoppingBasket/> to have access to the current basket in order to display the items, and also removeItem: needed to handle a removal of a product should the online customer click on the 'remove' button.
 
 const Navigation = ({ basket, removeItem }) => {
   return (

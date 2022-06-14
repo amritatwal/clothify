@@ -7,11 +7,13 @@ import {
   Flex,
   Text,
   Image,
-  IconButton,
   Box,
   Icon,
 } from '@chakra-ui/react';
 import { FiShoppingCart } from 'react-icons/fi';
+
+// Chakra's <Menu/> component was used due to how easily and quickly it creates a dropdown that is functional, responsive and user-friendly.
+// I chose to use a shopping cart icon from React Icons for the dropdown menu to signify to the online customer where the mini-basket is
 
 const ShoppingBasket = ({ basket, removeItem }) => {
   return (
@@ -37,10 +39,12 @@ const ShoppingBasket = ({ basket, removeItem }) => {
               </Flex>
             </MenuButton>
             <MenuList p="1em">
+              {/* Should the basket be empty, it's good practice to instead display some text to the user to show that. In this context, I am using the length property on basket to determine whether the basket is empty or not for conditional rendering. */}
               {basket.length < 1 ? (
                 <Text>Your basket is empty</Text>
               ) : (
                 <>
+                  {/* Iterating over each product in the basket and rendering the UI that includes multiplying the price and quantity of a product to get a sub-total */}
                   {basket.map(item => {
                     return (
                       <Flex display="flex">
@@ -60,6 +64,7 @@ const ShoppingBasket = ({ basket, removeItem }) => {
                               Qty: {item.quantity}
                             </Text>
                           </Flex>
+                          {/* Should the online customer choose to remove a product, an onClick is used to invoke removeItem() */}
                           <Button
                             onClick={() => removeItem(item)}
                             mt=".5em"

@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live demo 
+https://clothifyshop.netlify.app/ 
 
-## Available Scripts
+*It may take a few seconds for the API to respond and UI to render*
 
-In the project directory, you can run:
+## Goals
+- Develop a MVP within a time-frame
+- Mobile-first approach and make application as responsive as possible
+- Achieve all user requirements 
+- Deploy MVP
 
-### `npm start`
+## Technology
+- React.js chosen for easy set-up, flexibility and use of components and Next.js in order to have persistent components (mini-basket in navigation) and routing. When this application has been developed further there will be multiple pages for products and Next.js will be extremely useful for this. 
+- Chakra UI was utilised for this application due to time constraints and wanting to spend enough time on logic, and less time on building components from scratch. Chakra's strengths lie in the use of breakpoints which makes creating responsive applications easier.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Plan
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Design a basic MVP that meets the relevant criteria. This also involved reading the API documentation and testing the endpoints and choosing what data to work with. I followed the 'make it work, make it fast, make it pretty' mantra and did not prioritise design but still wanted to follow the design-thinking process and make something as useful and equitable as possible.
 
-### `npm test`
+![Plan](Untitled-2022-06-08-1703.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Broke the MVP down in terms of what user requirements needed to be achieved:
+- As an online customer, I want to see a page where I can view all products 
+- As an online customer, I want to click on a button and be able to add a product to my basket 
+- As an online customer, I need to add a product to a mini basket, so that I can proceed to purchase.
+- As an online customer, I want to view my mini basket, so that I can see all my products I have added to purchase.
+- As an online customer, I want to update the quantity of an item in my mini basket, so that I can purchase more than one of the same item.
+- As an online customer, I want to update my mini basket, so that I can add and/or remove an item.
+- As an online customer, I want to view my mini basket, so that I can see the total value of my basket.
+- As an online customer, I want my mini basket to always display the exact items I added no matter what page I am on , so that I am free to navigate throughout the store and never lose what’s in my basket.
 
-### `npm run build`
+3. Planned out the components and decided what states would be required and what props would need to be passed.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Outlined a set of starter tests to incorporate. Currently, I am looking for opportunities to incorporate TDD in my development projects but opted against it due to time-constraints and wanting to have enough time to write implementation code. Unit testing would still be required and this involved looking at the MVP and translating the user stories into requirements before writing unit tests. These included:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Testing that all functional components and their props were rendered successfully
+- Testing the 'add to basket' button, once clicked, correctly updates the quantity of a product if currently in basket OR adds the product to the basket with a quantity of 1
+- Testing that the navigation/basket correctly displays the number of items in the online customer's current basket
+- Testing logic within the mini-basket such as:
+    - The correct rendering of items (do they have a image, title, price, quantity...)
+    - The correct sub-total is displayed
+    - If an online customer clicks on the 'remove' button, does the basket state update correctly? 

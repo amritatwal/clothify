@@ -4,15 +4,17 @@ import Product from '../src/components/Product';
 import API_URL from '../config';
 
 export default function Home({ updateBasket }) {
+  // Products fetched from the API are stored in a state
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    // Using the Fetch API to retrieve the products
+    // useEffect is necessary in order to render the products once mounted
     async function fetchProducts() {
+      // Utilising a try ...catch to wrap the fetch inside to handle exceptions/error handling
       try {
-        console.log(API_URL);
         const response = await fetch(`${API_URL}/?limit=10`);
         const data = await response.json();
-        console.log(data);
         setProducts([products, ...data]);
       } catch (error) {
         throw error;
