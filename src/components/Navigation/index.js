@@ -8,15 +8,24 @@ import ShoppingBasket from '../Basket';
 const Navigation = ({ basket, removeItem }) => {
   return (
     <Flex
+      justifyContent="center"
+      alignItems="center"
       flexDirection="row"
-      borderBottom={'solid 1px #ededed'}
       padding=".5em"
-      justifyContent={'flex-end'}
     >
-      <Box flexGrow={1} ml={2}>
-        <Heading>clothify</Heading>
+      <Box justifyContent="center" display="flex" flexGrow="1">
+        <Heading
+          color="#F694C1"
+          fontFamily="Fredoka One"
+          fontSize={{ base: '2em', md: '3.5em' }}
+          textTransform="lowercase"
+        >
+          Bloom
+        </Heading>
       </Box>
-      <ShoppingBasket basket={basket} removeItem={removeItem} />
+      <Box display="flex" mx="1em" w="3em">
+        <ShoppingBasket basket={basket} removeItem={removeItem} />
+      </Box>
     </Flex>
   );
 };

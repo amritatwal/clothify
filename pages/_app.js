@@ -1,6 +1,16 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { Box } from '@chakra-ui/react';
 import Navigation from '../src/components/Navigation';
+import styled from '@emotion/styled';
+
+// Import relevant font
+import '@fontsource/fredoka-one';
+
+// //entire app is put inside an appContainer which is a div and styled with the relevant font family
+// const AppContainer = styled.div`
+//   font-family: 'Fredoka One';
+// `;
 
 function App({ Component, pageProps }) {
   // Products added to the basket are stored in a state
@@ -40,7 +50,9 @@ function App({ Component, pageProps }) {
     <ChakraProvider>
       <Navigation basket={basket} removeItem={removeItem} />
       <div className="container">
-        <Component {...pageProps} updateBasket={updateBasket} />
+        <Box mx={{ md: '10em' }}>
+          <Component {...pageProps} updateBasket={updateBasket} />
+        </Box>
       </div>
     </ChakraProvider>
   );

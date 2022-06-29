@@ -17,18 +17,20 @@ import { FiShoppingCart } from 'react-icons/fi';
 
 const ShoppingBasket = ({ basket, removeItem }) => {
   return (
-    <div>
+    <>
       <Menu>
         {({ isOpen }) => (
           <>
-            <MenuButton isActive={isOpen} as={Button}>
+            <MenuButton isActive={isOpen}>
               <Flex flexDirection="row">
-                <Icon as={FiShoppingCart} />
+                <FiShoppingCart color="grey" />
                 <Box
                   borderRadius={50}
-                  w={'1.3em'}
-                  h={'1.3em'}
-                  backgroundColor="lightgrey"
+                  w={'1.4em'}
+                  h={'1.4em'}
+                  fontWeight="800"
+                  color="#FFFFFF"
+                  backgroundColor="#F694C1"
                   display="flex"
                   justifyContent="center"
                   fontSize=".8em"
@@ -87,7 +89,7 @@ const ShoppingBasket = ({ basket, removeItem }) => {
           </>
         )}
       </Menu>
-    </div>
+    </>
   );
 };
 

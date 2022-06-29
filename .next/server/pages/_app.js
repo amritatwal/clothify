@@ -1,247 +1,112 @@
-"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 729:
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _src_components_Navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/Navigation */ \"./src/components/Navigation/index.js\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/styled */ \"@emotion/styled\");\n/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _fontsource_fredoka_one__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fontsource/fredoka-one */ \"./node_modules/@fontsource/fredoka-one/index.css\");\n/* harmony import */ var _fontsource_fredoka_one__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fontsource_fredoka_one__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n// Import relevant font\n\n// //entire app is put inside an appContainer which is a div and styled with the relevant font family\n// const AppContainer = styled.div`\n//   font-family: 'Fredoka One';\n// `;\nfunction App({ Component , pageProps  }) {\n    // Products added to the basket are stored in a state\n    const { 0: basket , 1: setBasket  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);\n    function updateBasket(itemToAdd) {\n        // First, determine whether the product the online customer wants to add already exists in the basket by using the product id\n        const existingItem = basket.find((item)=>{\n            return item.id === itemToAdd.id;\n        });\n        // If it has been already added, increase the current quantity by one (this logic will need to change when there are variations in products such as colour or size)\n        if (existingItem) {\n            existingItem.quantity++;\n        } else {\n            // If not, add the product to the basket\n            setBasket([\n                ...basket,\n                itemToAdd\n            ]);\n        }\n    }\n    function removeItem(itemToRemove) {\n        // First, find the index of the product the online customer wants to remove by using the product id\n        const indexToRemove = basket.findIndex((item)=>{\n            return item.id === itemToRemove.id;\n        });\n        // Depending on the position of the product in the basket, splice the basket array accordingly and remove the product\n        if (indexToRemove > 0) {\n            setBasket([\n                ...basket.slice(0, indexToRemove),\n                ...basket.slice(indexToRemove + 1), \n            ]);\n        } else {\n            setBasket([\n                ...basket.slice(indexToRemove + 1)\n            ]);\n        }\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.ChakraProvider, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_src_components_Navigation__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                basket: basket,\n                removeItem: removeItem\n            }, void 0, false, {\n                fileName: \"/Users/amritatwal/Desktop/osc/pages/_app.js\",\n                lineNumber: 51,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"container\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                    mx: {\n                        md: \"10em\"\n                    },\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                        ...pageProps,\n                        updateBasket: updateBasket\n                    }, void 0, false, {\n                        fileName: \"/Users/amritatwal/Desktop/osc/pages/_app.js\",\n                        lineNumber: 54,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/Users/amritatwal/Desktop/osc/pages/_app.js\",\n                    lineNumber: 53,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/Users/amritatwal/Desktop/osc/pages/_app.js\",\n                lineNumber: 52,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/amritatwal/Desktop/osc/pages/_app.js\",\n        lineNumber: 50,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQWtEO0FBQ1Y7QUFDRDtBQUNlO0FBQ2pCO0FBRXJDLHVCQUF1QjtBQUNVO0FBRWpDLHFHQUFxRztBQUNyRyxtQ0FBbUM7QUFDbkMsZ0NBQWdDO0FBQ2hDLEtBQUs7QUFFTCxTQUFTTSxHQUFHLENBQUMsRUFBRUMsU0FBUyxHQUFFQyxTQUFTLEdBQUUsRUFBRTtJQUNyQyxxREFBcUQ7SUFDckQsTUFBTSxFQWhCUixHQWdCU0MsTUFBTSxHQWhCZixHQWdCaUJDLFNBQVMsTUFBSVIsK0NBQVEsQ0FBQyxFQUFFLENBQUM7SUFFeEMsU0FBU1MsWUFBWSxDQUFDQyxTQUFTLEVBQUU7UUFDL0IsNkhBQTZIO1FBQzdILE1BQU1DLFlBQVksR0FBR0osTUFBTSxDQUFDSyxJQUFJLENBQUNDLENBQUFBLElBQUksR0FBSTtZQUN2QyxPQUFPQSxJQUFJLENBQUNDLEVBQUUsS0FBS0osU0FBUyxDQUFDSSxFQUFFLENBQUM7U0FDakMsQ0FBQztRQUNGLG1LQUFtSztRQUNuSyxJQUFJSCxZQUFZLEVBQUU7WUFDaEJBLFlBQVksQ0FBQ0ksUUFBUSxFQUFFLENBQUM7U0FDekIsTUFBTTtZQUNMLHdDQUF3QztZQUN4Q1AsU0FBUyxDQUFDO21CQUFJRCxNQUFNO2dCQUFFRyxTQUFTO2FBQUMsQ0FBQyxDQUFDO1NBQ25DO0tBQ0Y7SUFFRCxTQUFTTSxVQUFVLENBQUNDLFlBQVksRUFBRTtRQUNoQyxtR0FBbUc7UUFDbkcsTUFBTUMsYUFBYSxHQUFHWCxNQUFNLENBQUNZLFNBQVMsQ0FBQ04sQ0FBQUEsSUFBSSxHQUFJO1lBQzdDLE9BQU9BLElBQUksQ0FBQ0MsRUFBRSxLQUFLRyxZQUFZLENBQUNILEVBQUUsQ0FBQztTQUNwQyxDQUFDO1FBQ0YscUhBQXFIO1FBQ3JILElBQUlJLGFBQWEsR0FBRyxDQUFDLEVBQUU7WUFDckJWLFNBQVMsQ0FBQzttQkFDTEQsTUFBTSxDQUFDYSxLQUFLLENBQUMsQ0FBQyxFQUFFRixhQUFhLENBQUM7bUJBQzlCWCxNQUFNLENBQUNhLEtBQUssQ0FBQ0YsYUFBYSxHQUFHLENBQUMsQ0FBQzthQUNuQyxDQUFDLENBQUM7U0FDSixNQUFNO1lBQ0xWLFNBQVMsQ0FBQzttQkFBSUQsTUFBTSxDQUFDYSxLQUFLLENBQUNGLGFBQWEsR0FBRyxDQUFDLENBQUM7YUFBQyxDQUFDLENBQUM7U0FDakQ7S0FDRjtJQUVELHFCQUNFLDhEQUFDcEIsNERBQWM7OzBCQUNiLDhEQUFDSSxrRUFBVTtnQkFBQ0ssTUFBTSxFQUFFQSxNQUFNO2dCQUFFUyxVQUFVLEVBQUVBLFVBQVU7Ozs7O29CQUFJOzBCQUN0RCw4REFBQ0ssS0FBRztnQkFBQ0MsU0FBUyxFQUFDLFdBQVc7MEJBQ3hCLDRFQUFDckIsaURBQUc7b0JBQUNzQixFQUFFLEVBQUU7d0JBQUVDLEVBQUUsRUFBRSxNQUFNO3FCQUFFOzhCQUNyQiw0RUFBQ25CLFNBQVM7d0JBQUUsR0FBR0MsU0FBUzt3QkFBRUcsWUFBWSxFQUFFQSxZQUFZOzs7Ozs0QkFBSTs7Ozs7d0JBQ3BEOzs7OztvQkFDRjs7Ozs7O1lBQ1MsQ0FDakI7Q0FDSDtBQUVELGlFQUFlTCxHQUFHLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9vc2MvLi9wYWdlcy9fYXBwLmpzP2UwYWQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ2hha3JhUHJvdmlkZXIgfSBmcm9tICdAY2hha3JhLXVpL3JlYWN0JztcbmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IEJveCB9IGZyb20gJ0BjaGFrcmEtdWkvcmVhY3QnO1xuaW1wb3J0IE5hdmlnYXRpb24gZnJvbSAnLi4vc3JjL2NvbXBvbmVudHMvTmF2aWdhdGlvbic7XG5pbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XG5cbi8vIEltcG9ydCByZWxldmFudCBmb250XG5pbXBvcnQgJ0Bmb250c291cmNlL2ZyZWRva2Etb25lJztcblxuLy8gLy9lbnRpcmUgYXBwIGlzIHB1dCBpbnNpZGUgYW4gYXBwQ29udGFpbmVyIHdoaWNoIGlzIGEgZGl2IGFuZCBzdHlsZWQgd2l0aCB0aGUgcmVsZXZhbnQgZm9udCBmYW1pbHlcbi8vIGNvbnN0IEFwcENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXG4vLyAgIGZvbnQtZmFtaWx5OiAnRnJlZG9rYSBPbmUnO1xuLy8gYDtcblxuZnVuY3Rpb24gQXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSkge1xuICAvLyBQcm9kdWN0cyBhZGRlZCB0byB0aGUgYmFza2V0IGFyZSBzdG9yZWQgaW4gYSBzdGF0ZVxuICBjb25zdCBbYmFza2V0LCBzZXRCYXNrZXRdID0gdXNlU3RhdGUoW10pO1xuXG4gIGZ1bmN0aW9uIHVwZGF0ZUJhc2tldChpdGVtVG9BZGQpIHtcbiAgICAvLyBGaXJzdCwgZGV0ZXJtaW5lIHdoZXRoZXIgdGhlIHByb2R1Y3QgdGhlIG9ubGluZSBjdXN0b21lciB3YW50cyB0byBhZGQgYWxyZWFkeSBleGlzdHMgaW4gdGhlIGJhc2tldCBieSB1c2luZyB0aGUgcHJvZHVjdCBpZFxuICAgIGNvbnN0IGV4aXN0aW5nSXRlbSA9IGJhc2tldC5maW5kKGl0ZW0gPT4ge1xuICAgICAgcmV0dXJuIGl0ZW0uaWQgPT09IGl0ZW1Ub0FkZC5pZDtcbiAgICB9KTtcbiAgICAvLyBJZiBpdCBoYXMgYmVlbiBhbHJlYWR5IGFkZGVkLCBpbmNyZWFzZSB0aGUgY3VycmVudCBxdWFudGl0eSBieSBvbmUgKHRoaXMgbG9naWMgd2lsbCBuZWVkIHRvIGNoYW5nZSB3aGVuIHRoZXJlIGFyZSB2YXJpYXRpb25zIGluIHByb2R1Y3RzIHN1Y2ggYXMgY29sb3VyIG9yIHNpemUpXG4gICAgaWYgKGV4aXN0aW5nSXRlbSkge1xuICAgICAgZXhpc3RpbmdJdGVtLnF1YW50aXR5Kys7XG4gICAgfSBlbHNlIHtcbiAgICAgIC8vIElmIG5vdCwgYWRkIHRoZSBwcm9kdWN0IHRvIHRoZSBiYXNrZXRcbiAgICAgIHNldEJhc2tldChbLi4uYmFza2V0LCBpdGVtVG9BZGRdKTtcbiAgICB9XG4gIH1cblxuICBmdW5jdGlvbiByZW1vdmVJdGVtKGl0ZW1Ub1JlbW92ZSkge1xuICAgIC8vIEZpcnN0LCBmaW5kIHRoZSBpbmRleCBvZiB0aGUgcHJvZHVjdCB0aGUgb25saW5lIGN1c3RvbWVyIHdhbnRzIHRvIHJlbW92ZSBieSB1c2luZyB0aGUgcHJvZHVjdCBpZFxuICAgIGNvbnN0IGluZGV4VG9SZW1vdmUgPSBiYXNrZXQuZmluZEluZGV4KGl0ZW0gPT4ge1xuICAgICAgcmV0dXJuIGl0ZW0uaWQgPT09IGl0ZW1Ub1JlbW92ZS5pZDtcbiAgICB9KTtcbiAgICAvLyBEZXBlbmRpbmcgb24gdGhlIHBvc2l0aW9uIG9mIHRoZSBwcm9kdWN0IGluIHRoZSBiYXNrZXQsIHNwbGljZSB0aGUgYmFza2V0IGFycmF5IGFjY29yZGluZ2x5IGFuZCByZW1vdmUgdGhlIHByb2R1Y3RcbiAgICBpZiAoaW5kZXhUb1JlbW92ZSA+IDApIHtcbiAgICAgIHNldEJhc2tldChbXG4gICAgICAgIC4uLmJhc2tldC5zbGljZSgwLCBpbmRleFRvUmVtb3ZlKSxcbiAgICAgICAgLi4uYmFza2V0LnNsaWNlKGluZGV4VG9SZW1vdmUgKyAxKSxcbiAgICAgIF0pO1xuICAgIH0gZWxzZSB7XG4gICAgICBzZXRCYXNrZXQoWy4uLmJhc2tldC5zbGljZShpbmRleFRvUmVtb3ZlICsgMSldKTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gKFxuICAgIDxDaGFrcmFQcm92aWRlcj5cbiAgICAgIDxOYXZpZ2F0aW9uIGJhc2tldD17YmFza2V0fSByZW1vdmVJdGVtPXtyZW1vdmVJdGVtfSAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPEJveCBteD17eyBtZDogJzEwZW0nIH19PlxuICAgICAgICAgIDxDb21wb25lbnQgey4uLnBhZ2VQcm9wc30gdXBkYXRlQmFza2V0PXt1cGRhdGVCYXNrZXR9IC8+XG4gICAgICAgIDwvQm94PlxuICAgICAgPC9kaXY+XG4gICAgPC9DaGFrcmFQcm92aWRlcj5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwO1xuIl0sIm5hbWVzIjpbIkNoYWtyYVByb3ZpZGVyIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIkJveCIsIk5hdmlnYXRpb24iLCJzdHlsZWQiLCJBcHAiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiLCJiYXNrZXQiLCJzZXRCYXNrZXQiLCJ1cGRhdGVCYXNrZXQiLCJpdGVtVG9BZGQiLCJleGlzdGluZ0l0ZW0iLCJmaW5kIiwiaXRlbSIsImlkIiwicXVhbnRpdHkiLCJyZW1vdmVJdGVtIiwiaXRlbVRvUmVtb3ZlIiwiaW5kZXhUb1JlbW92ZSIsImZpbmRJbmRleCIsInNsaWNlIiwiZGl2IiwiY2xhc3NOYW1lIiwibXgiLCJtZCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ _app)
-});
+/***/ }),
 
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "@chakra-ui/react"
-var react_ = __webpack_require__(930);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
-;// CONCATENATED MODULE: external "react-icons/fi"
-const fi_namespaceObject = require("react-icons/fi");
-;// CONCATENATED MODULE: ./src/components/Basket/index.js
+/***/ "./src/components/Basket/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Basket/index.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fi */ \"react-icons/fi\");\n/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_fi__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n// Chakra's <Menu/> component was used due to how easily and quickly it creates a dropdown that is functional, responsive and user-friendly.\n// I chose to use a shopping cart icon from React Icons for the dropdown menu to signify to the online customer where the mini-basket is\nconst ShoppingBasket = ({ basket , removeItem  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Menu, {\n            children: ({ isOpen  })=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.MenuButton, {\n                            isActive: isOpen,\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n                                flexDirection: \"row\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fi__WEBPACK_IMPORTED_MODULE_3__.FiShoppingCart, {\n                                        color: \"grey\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                        lineNumber: 26,\n                                        columnNumber: 17\n                                    }, undefined),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Box, {\n                                        borderRadius: 50,\n                                        w: \"1.4em\",\n                                        h: \"1.4em\",\n                                        fontWeight: \"800\",\n                                        color: \"#FFFFFF\",\n                                        backgroundColor: \"#F694C1\",\n                                        display: \"flex\",\n                                        justifyContent: \"center\",\n                                        fontSize: \".8em\",\n                                        ml: \".5em\",\n                                        children: basket.length\n                                    }, void 0, false, {\n                                        fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                        lineNumber: 27,\n                                        columnNumber: 17\n                                    }, undefined)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                lineNumber: 25,\n                                columnNumber: 15\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                            lineNumber: 24,\n                            columnNumber: 13\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.MenuList, {\n                            p: \"1em\",\n                            children: basket.length < 1 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Text, {\n                                children: \"Your basket is empty\"\n                            }, void 0, false, {\n                                fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                lineNumber: 46,\n                                columnNumber: 17\n                            }, undefined) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n                                children: [\n                                    basket.map((item)=>{\n                                        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n                                            display: \"flex\",\n                                            children: [\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Image, {\n                                                    src: item.image,\n                                                    w: {\n                                                        base: \"3em\"\n                                                    },\n                                                    height: \"100%\",\n                                                    pr: \".5em\"\n                                                }, void 0, false, {\n                                                    fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                    lineNumber: 53,\n                                                    columnNumber: 25\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n                                                    flexDirection: \"column\",\n                                                    pb: \".5em\",\n                                                    children: [\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Text, {\n                                                            fontWeight: \"800\",\n                                                            fontSize: {\n                                                                base: \".8em\"\n                                                            },\n                                                            children: [\n                                                                \"\\xa3\",\n                                                                item.price * item.quantity\n                                                            ]\n                                                        }, void 0, true, {\n                                                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                            lineNumber: 60,\n                                                            columnNumber: 27\n                                                        }, undefined),\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Text, {\n                                                            fontSize: {\n                                                                base: \".8em\"\n                                                            },\n                                                            children: item.title\n                                                        }, void 0, false, {\n                                                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                            lineNumber: 63,\n                                                            columnNumber: 27\n                                                        }, undefined),\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n                                                            flexDirection: \"row\",\n                                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Text, {\n                                                                fontSize: {\n                                                                    base: \".8em\"\n                                                                },\n                                                                children: [\n                                                                    \"Qty: \",\n                                                                    item.quantity\n                                                                ]\n                                                            }, void 0, true, {\n                                                                fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                                lineNumber: 65,\n                                                                columnNumber: 29\n                                                            }, undefined)\n                                                        }, void 0, false, {\n                                                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                            lineNumber: 64,\n                                                            columnNumber: 27\n                                                        }, undefined),\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                                                            onClick: ()=>removeItem(item)\n                                                            ,\n                                                            mt: \".5em\",\n                                                            w: {\n                                                                base: \"10em\"\n                                                            },\n                                                            h: \"auto\",\n                                                            p: \".5em\",\n                                                            color: \"grey\",\n                                                            fontSize: {\n                                                                base: \".5em\"\n                                                            },\n                                                            children: \"REMOVE ITEM\"\n                                                        }, void 0, false, {\n                                                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                            lineNumber: 70,\n                                                            columnNumber: 27\n                                                        }, undefined)\n                                                    ]\n                                                }, void 0, true, {\n                                                    fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                                    lineNumber: 59,\n                                                    columnNumber: 25\n                                                }, undefined)\n                                            ]\n                                        }, void 0, true, {\n                                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                            lineNumber: 52,\n                                            columnNumber: 23\n                                        }, undefined);\n                                    }),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                                        children: \"Checkout\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                                        lineNumber: 85,\n                                        columnNumber: 19\n                                    }, undefined)\n                                ]\n                            }, void 0, true)\n                        }, void 0, false, {\n                            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n                            lineNumber: 43,\n                            columnNumber: 13\n                        }, undefined)\n                    ]\n                }, void 0, true)\n        }, void 0, false, {\n            fileName: \"/Users/amritatwal/Desktop/osc/src/components/Basket/index.js\",\n            lineNumber: 21,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ShoppingBasket);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QUUsTUFBTTs2REFBRTtzRUFDM0IsYUFFRDs7Ozs7cUVBQVM7Ozs7Ozs2REFDSjs7Ozs7O3FEQUNGLENBQ1A7cUNBQ0gsQ0FBQztrREFDRiw4REFBQzdCLG9EQUFNO2tEQUFDLFVBQVE7Ozs7O2lEQUFTOzs0Q0FDeEI7Ozs7O3FDQUVJOztnQ0FDVjs7Ozs7cUJBRUE7cUJBQ04sQ0FDSDtDQUNIO0FBRUQsaUVBQWVPLGNBQWMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL29zYy8uL3NyYy9jb21wb25lbnRzL0Jhc2tldC9pbmRleC5qcz9hZjVlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQge1xuICBNZW51LFxuICBNZW51QnV0dG9uLFxuICBNZW51TGlzdCxcbiAgQnV0dG9uLFxuICBGbGV4LFxuICBUZXh0LFxuICBJbWFnZSxcbiAgQm94LFxuICBJY29uLFxufSBmcm9tICdAY2hha3JhLXVpL3JlYWN0JztcbmltcG9ydCB7IEZpU2hvcHBpbmdDYXJ0IH0gZnJvbSAncmVhY3QtaWNvbnMvZmknO1xuXG4vLyBDaGFrcmEncyA8TWVudS8+IGNvbXBvbmVudCB3YXMgdXNlZCBkdWUgdG8gaG93IGVhc2lseSBhbmQgcXVpY2tseSBpdCBjcmVhdGVzIGEgZHJvcGRvd24gdGhhdCBpcyBmdW5jdGlvbmFsLCByZXNwb25zaXZlIGFuZCB1c2VyLWZyaWVuZGx5LlxuLy8gSSBjaG9zZSB0byB1c2UgYSBzaG9wcGluZyBjYXJ0IGljb24gZnJvbSBSZWFjdCBJY29ucyBmb3IgdGhlIGRyb3Bkb3duIG1lbnUgdG8gc2lnbmlmeSB0byB0aGUgb25saW5lIGN1c3RvbWVyIHdoZXJlIHRoZSBtaW5pLWJhc2tldCBpc1xuXG5jb25zdCBTaG9wcGluZ0Jhc2tldCA9ICh7IGJhc2tldCwgcmVtb3ZlSXRlbSB9KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxNZW51PlxuICAgICAgICB7KHsgaXNPcGVuIH0pID0+IChcbiAgICAgICAgICA8PlxuICAgICAgICAgICAgPE1lbnVCdXR0b24gaXNBY3RpdmU9e2lzT3Blbn0+XG4gICAgICAgICAgICAgIDxGbGV4IGZsZXhEaXJlY3Rpb249XCJyb3dcIj5cbiAgICAgICAgICAgICAgICA8RmlTaG9wcGluZ0NhcnQgY29sb3I9XCJncmV5XCIgLz5cbiAgICAgICAgICAgICAgICA8Qm94XG4gICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM9ezUwfVxuICAgICAgICAgICAgICAgICAgdz17JzEuNGVtJ31cbiAgICAgICAgICAgICAgICAgIGg9eycxLjRlbSd9XG4gICAgICAgICAgICAgICAgICBmb250V2VpZ2h0PVwiODAwXCJcbiAgICAgICAgICAgICAgICAgIGNvbG9yPVwiI0ZGRkZGRlwiXG4gICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I9XCIjRjY5NEMxXCJcbiAgICAgICAgICAgICAgICAgIGRpc3BsYXk9XCJmbGV4XCJcbiAgICAgICAgICAgICAgICAgIGp1c3RpZnlDb250ZW50PVwiY2VudGVyXCJcbiAgICAgICAgICAgICAgICAgIGZvbnRTaXplPVwiLjhlbVwiXG4gICAgICAgICAgICAgICAgICBtbD1cIi41ZW1cIlxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgIHtiYXNrZXQubGVuZ3RofVxuICAgICAgICAgICAgICAgIDwvQm94PlxuICAgICAgICAgICAgICA8L0ZsZXg+XG4gICAgICAgICAgICA8L01lbnVCdXR0b24+XG4gICAgICAgICAgICA8TWVudUxpc3QgcD1cIjFlbVwiPlxuICAgICAgICAgICAgICB7LyogU2hvdWxkIHRoZSBiYXNrZXQgYmUgZW1wdHksIGl0J3MgZ29vZCBwcmFjdGljZSB0byBpbnN0ZWFkIGRpc3BsYXkgc29tZSB0ZXh0IHRvIHRoZSB1c2VyIHRvIHNob3cgdGhhdC4gSW4gdGhpcyBjb250ZXh0LCBJIGFtIHVzaW5nIHRoZSBsZW5ndGggcHJvcGVydHkgb24gYmFza2V0IHRvIGRldGVybWluZSB3aGV0aGVyIHRoZSBiYXNrZXQgaXMgZW1wdHkgb3Igbm90IGZvciBjb25kaXRpb25hbCByZW5kZXJpbmcuICovfVxuICAgICAgICAgICAgICB7YmFza2V0Lmxlbmd0aCA8IDEgPyAoXG4gICAgICAgICAgICAgICAgPFRleHQ+WW91ciBiYXNrZXQgaXMgZW1wdHk8L1RleHQ+XG4gICAgICAgICAgICAgICkgOiAoXG4gICAgICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgICAgIHsvKiBJdGVyYXRpbmcgb3ZlciBlYWNoIHByb2R1Y3QgaW4gdGhlIGJhc2tldCBhbmQgcmVuZGVyaW5nIHRoZSBVSSB0aGF0IGluY2x1ZGVzIG11bHRpcGx5aW5nIHRoZSBwcmljZSBhbmQgcXVhbnRpdHkgb2YgYSBwcm9kdWN0IHRvIGdldCBhIHN1Yi10b3RhbCAqL31cbiAgICAgICAgICAgICAgICAgIHtiYXNrZXQubWFwKGl0ZW0gPT4ge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICAgIDxGbGV4IGRpc3BsYXk9XCJmbGV4XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8SW1hZ2VcbiAgICAgICAgICAgICAgICAgICAgICAgICAgc3JjPXtpdGVtLmltYWdlfVxuICAgICAgICAgICAgICAgICAgICAgICAgICB3PXt7IGJhc2U6ICczZW0nIH19XG4gICAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodD1cIjEwMCVcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICBwcj1cIi41ZW1cIlxuICAgICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxGbGV4IGZsZXhEaXJlY3Rpb249XCJjb2x1bW5cIiBwYj1cIi41ZW1cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPFRleHQgZm9udFdlaWdodD17JzgwMCd9IGZvbnRTaXplPXt7IGJhc2U6ICcuOGVtJyB9fT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICDCo3tpdGVtLnByaWNlICogaXRlbS5xdWFudGl0eX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9UZXh0PlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8VGV4dCBmb250U2l6ZT17eyBiYXNlOiAnLjhlbScgfX0+e2l0ZW0udGl0bGV9PC9UZXh0PlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8RmxleCBmbGV4RGlyZWN0aW9uPVwicm93XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPFRleHQgZm9udFNpemU9e3sgYmFzZTogJy44ZW0nIH19PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgUXR5OiB7aXRlbS5xdWFudGl0eX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L1RleHQ+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDwvRmxleD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgey8qIFNob3VsZCB0aGUgb25saW5lIGN1c3RvbWVyIGNob29zZSB0byByZW1vdmUgYSBwcm9kdWN0LCBhbiBvbkNsaWNrIGlzIHVzZWQgdG8gaW52b2tlIHJlbW92ZUl0ZW0oKSAqL31cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPEJ1dHRvblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHJlbW92ZUl0ZW0oaXRlbSl9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgbXQ9XCIuNWVtXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB3PXt7IGJhc2U6ICcxMGVtJyB9fVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGg9XCJhdXRvXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwPVwiLjVlbVwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I9XCJncmV5XCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZT17eyBiYXNlOiAnLjVlbScgfX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFJFTU9WRSBJVEVNXG4gICAgICAgICAgICAgICAgICAgICAgICAgIDwvQnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9GbGV4PlxuICAgICAgICAgICAgICAgICAgICAgIDwvRmxleD5cbiAgICAgICAgICAgICAgICAgICAgKTtcbiAgICAgICAgICAgICAgICAgIH0pfVxuICAgICAgICAgICAgICAgICAgPEJ1dHRvbj5DaGVja291dDwvQnV0dG9uPlxuICAgICAgICAgICAgICAgIDwvPlxuICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgPC9NZW51TGlzdD5cbiAgICAgICAgICA8Lz5cbiAgICAgICAgKX1cbiAgICAgIDwvTWVudT5cbiAgICA8Lz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFNob3BwaW5nQmFza2V0O1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiTWVudSIsIk1lbnVCdXR0b24iLCJNZW51TGlzdCIsIkJ1dHRvbiIsIkZsZXgiLCJUZXh0IiwiSW1hZ2UiLCJCb3giLCJJY29uIiwiRmlTaG9wcGluZ0NhcnQiLCJTaG9wcGluZ0Jhc2tldCIsImJhc2tldCIsInJlbW92ZUl0ZW0iLCJpc09wZW4iLCJpc0FjdGl2ZSIsImZsZXhEaXJlY3Rpb24iLCJjb2xvciIsImJvcmRlclJhZGl1cyIsInciLCJoIiwiZm9udFdlaWdodCIsImJhY2tncm91bmRDb2xvciIsImRpc3BsYXkiLCJqdXN0aWZ5Q29udGVudCIsImZvbnRTaXplIiwibWwiLCJsZW5ndGgiLCJwIiwibWFwIiwiaXRlbSIsInNyYyIsImltYWdlIiwiYmFzZSIsImhlaWdodCIsInByIiwicGIiLCJwcmljZSIsInF1YW50aXR5IiwidGl0bGUiLCJvbkNsaWNrIiwibXQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Basket/index.js\n");
 
+/***/ }),
 
+/***/ "./src/components/Navigation/index.js":
+/*!********************************************!*\
+  !*** ./src/components/Navigation/index.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-const ShoppingBasket = ({ basket , removeItem  })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Menu, {
-            children: ({ isOpen  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuButton, {
-                            isActive: isOpen,
-                            as: react_.Button,
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Flex, {
-                                flexDirection: "row",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(react_.Icon, {
-                                        as: fi_namespaceObject.FiShoppingCart
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(react_.Box, {
-                                        borderRadius: 50,
-                                        w: "1.3em",
-                                        h: "1.3em",
-                                        backgroundColor: "lightgrey",
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        fontSize: ".8em",
-                                        ml: ".5em",
-                                        children: basket.length
-                                    })
-                                ]
-                            })
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuList, {
-                            p: "1em",
-                            children: basket.length < 1 ? /*#__PURE__*/ jsx_runtime_.jsx(react_.Text, {
-                                children: "Your basket is empty"
-                            }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                                children: [
-                                    basket.map((item)=>{
-                                        return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Flex, {
-                                            display: "flex",
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(react_.Image, {
-                                                    src: item.image,
-                                                    w: {
-                                                        base: "3em"
-                                                    },
-                                                    height: "100%",
-                                                    pr: ".5em"
-                                                }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Flex, {
-                                                    flexDirection: "column",
-                                                    pb: ".5em",
-                                                    children: [
-                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Text, {
-                                                            fontWeight: "800",
-                                                            fontSize: {
-                                                                base: ".8em"
-                                                            },
-                                                            children: [
-                                                                "\xa3",
-                                                                item.price * item.quantity
-                                                            ]
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx(react_.Text, {
-                                                            fontSize: {
-                                                                base: ".8em"
-                                                            },
-                                                            children: item.title
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx(react_.Flex, {
-                                                            flexDirection: "row",
-                                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Text, {
-                                                                fontSize: {
-                                                                    base: ".8em"
-                                                                },
-                                                                children: [
-                                                                    "Qty: ",
-                                                                    item.quantity
-                                                                ]
-                                                            })
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx(react_.Button, {
-                                                            onClick: ()=>removeItem(item)
-                                                            ,
-                                                            mt: ".5em",
-                                                            w: {
-                                                                base: "10em"
-                                                            },
-                                                            h: "auto",
-                                                            p: ".5em",
-                                                            color: "grey",
-                                                            fontSize: {
-                                                                base: ".5em"
-                                                            },
-                                                            children: "REMOVE ITEM"
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        });
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(react_.Button, {
-                                        children: "Checkout"
-                                    })
-                                ]
-                            })
-                        })
-                    ]
-                })
-        })
-    });
-};
-/* harmony default export */ const Basket = (ShoppingBasket);
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _Basket__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Basket */ \"./src/components/Basket/index.js\");\n\n\n\n\n// The navigation bar currently only displays a name and the mini-basket.\n// The props being passed in - basket and removeItem - are necessary for <ShoppingBasket/> to have access to the current basket in order to display the items, and also removeItem: needed to handle a removal of a product should the online customer click on the 'remove' button.\nconst Navigation = ({ basket , removeItem  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n        justifyContent: \"center\",\n        alignItems: \"center\",\n        flexDirection: \"row\",\n        padding: \".5em\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Box, {\n                justifyContent: \"center\",\n                display: \"flex\",\n                flexGrow: \"1\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Heading, {\n                    color: \"#F694C1\",\n                    fontFamily: \"Fredoka One\",\n                    fontSize: {\n                        base: \"2em\",\n                        md: \"3.5em\"\n                    },\n                    textTransform: \"lowercase\",\n                    children: \"Bloom\"\n                }, void 0, false, {\n                    fileName: \"/Users/amritatwal/Desktop/osc/src/components/Navigation/index.js\",\n                    lineNumber: 17,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/amritatwal/Desktop/osc/src/components/Navigation/index.js\",\n                lineNumber: 16,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.Box, {\n                display: \"flex\",\n                mx: \"1em\",\n                w: \"3em\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Basket__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                    basket: basket,\n                    removeItem: removeItem\n                }, void 0, false, {\n                    fileName: \"/Users/amritatwal/Desktop/osc/src/components/Navigation/index.js\",\n                    lineNumber: 27,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/amritatwal/Desktop/osc/src/components/Navigation/index.js\",\n                lineNumber: 26,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/amritatwal/Desktop/osc/src/components/Navigation/index.js\",\n        lineNumber: 10,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navigation);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9OYXZpZ2F0aW9uL2luZGV4LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQUE7QUFBMEI7QUFDNEI7QUFDZjtBQUV2Qyx5RUFBeUU7QUFDekUsb1JBQW9SO0FBRXBSLE1BQU1LLFVBQVUsR0FBRyxDQUFDLEVBQUVDLE1BQU0sR0FBRUMsVUFBVSxHQUFFLEdBQUs7SUFDN0MscUJBQ0UsOERBQUNOLGtEQUFJO1FBQ0hPLGNBQWMsRUFBQyxRQUFRO1FBQ3ZCQyxVQUFVLEVBQUMsUUFBUTtRQUNuQkMsYUFBYSxFQUFDLEtBQUs7UUFDbkJDLE9BQU8sRUFBQyxNQUFNOzswQkFFZCw4REFBQ1QsaURBQUc7Z0JBQUNNLGNBQWMsRUFBQyxRQUFRO2dCQUFDSSxPQUFPLEVBQUMsTUFBTTtnQkFBQ0MsUUFBUSxFQUFDLEdBQUc7MEJBQ3RELDRFQUFDVixxREFBTztvQkFDTlcsS0FBSyxFQUFDLFNBQVM7b0JBQ2ZDLFVBQVUsRUFBQyxhQUFhO29CQUN4QkMsUUFBUSxFQUFFO3dCQUFFQyxJQUFJLEVBQUUsS0FBSzt3QkFBRUMsRUFBRSxFQUFFLE9BQU87cUJBQUU7b0JBQ3RDQyxhQUFhLEVBQUMsV0FBVzs4QkFDMUIsT0FFRDs7Ozs7NkJBQVU7Ozs7O3lCQUNOOzBCQUNOLDhEQUFDakIsaURBQUc7Z0JBQUNVLE9BQU8sRUFBQyxNQUFNO2dCQUFDUSxFQUFFLEVBQUMsS0FBSztnQkFBQ0MsQ0FBQyxFQUFDLEtBQUs7MEJBQ2xDLDRFQUFDakIsK0NBQWM7b0JBQUNFLE1BQU0sRUFBRUEsTUFBTTtvQkFBRUMsVUFBVSxFQUFFQSxVQUFVOzs7Ozs2QkFBSTs7Ozs7eUJBQ3REOzs7Ozs7aUJBQ0QsQ0FDUDtDQUNIO0FBRUQsaUVBQWVGLFVBQVUsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL29zYy8uL3NyYy9jb21wb25lbnRzL05hdmlnYXRpb24vaW5kZXguanM/NDFhMyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgRmxleCwgQm94LCBIZWFkaW5nIH0gZnJvbSAnQGNoYWtyYS11aS9yZWFjdCc7XG5pbXBvcnQgU2hvcHBpbmdCYXNrZXQgZnJvbSAnLi4vQmFza2V0JztcblxuLy8gVGhlIG5hdmlnYXRpb24gYmFyIGN1cnJlbnRseSBvbmx5IGRpc3BsYXlzIGEgbmFtZSBhbmQgdGhlIG1pbmktYmFza2V0LlxuLy8gVGhlIHByb3BzIGJlaW5nIHBhc3NlZCBpbiAtIGJhc2tldCBhbmQgcmVtb3ZlSXRlbSAtIGFyZSBuZWNlc3NhcnkgZm9yIDxTaG9wcGluZ0Jhc2tldC8+IHRvIGhhdmUgYWNjZXNzIHRvIHRoZSBjdXJyZW50IGJhc2tldCBpbiBvcmRlciB0byBkaXNwbGF5IHRoZSBpdGVtcywgYW5kIGFsc28gcmVtb3ZlSXRlbTogbmVlZGVkIHRvIGhhbmRsZSBhIHJlbW92YWwgb2YgYSBwcm9kdWN0IHNob3VsZCB0aGUgb25saW5lIGN1c3RvbWVyIGNsaWNrIG9uIHRoZSAncmVtb3ZlJyBidXR0b24uXG5cbmNvbnN0IE5hdmlnYXRpb24gPSAoeyBiYXNrZXQsIHJlbW92ZUl0ZW0gfSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxGbGV4XG4gICAgICBqdXN0aWZ5Q29udGVudD1cImNlbnRlclwiXG4gICAgICBhbGlnbkl0ZW1zPVwiY2VudGVyXCJcbiAgICAgIGZsZXhEaXJlY3Rpb249XCJyb3dcIlxuICAgICAgcGFkZGluZz1cIi41ZW1cIlxuICAgID5cbiAgICAgIDxCb3gganVzdGlmeUNvbnRlbnQ9XCJjZW50ZXJcIiBkaXNwbGF5PVwiZmxleFwiIGZsZXhHcm93PVwiMVwiPlxuICAgICAgICA8SGVhZGluZ1xuICAgICAgICAgIGNvbG9yPVwiI0Y2OTRDMVwiXG4gICAgICAgICAgZm9udEZhbWlseT1cIkZyZWRva2EgT25lXCJcbiAgICAgICAgICBmb250U2l6ZT17eyBiYXNlOiAnMmVtJywgbWQ6ICczLjVlbScgfX1cbiAgICAgICAgICB0ZXh0VHJhbnNmb3JtPVwibG93ZXJjYXNlXCJcbiAgICAgICAgPlxuICAgICAgICAgIEJsb29tXG4gICAgICAgIDwvSGVhZGluZz5cbiAgICAgIDwvQm94PlxuICAgICAgPEJveCBkaXNwbGF5PVwiZmxleFwiIG14PVwiMWVtXCIgdz1cIjNlbVwiPlxuICAgICAgICA8U2hvcHBpbmdCYXNrZXQgYmFza2V0PXtiYXNrZXR9IHJlbW92ZUl0ZW09e3JlbW92ZUl0ZW19IC8+XG4gICAgICA8L0JveD5cbiAgICA8L0ZsZXg+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBOYXZpZ2F0aW9uO1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiRmxleCIsIkJveCIsIkhlYWRpbmciLCJTaG9wcGluZ0Jhc2tldCIsIk5hdmlnYXRpb24iLCJiYXNrZXQiLCJyZW1vdmVJdGVtIiwianVzdGlmeUNvbnRlbnQiLCJhbGlnbkl0ZW1zIiwiZmxleERpcmVjdGlvbiIsInBhZGRpbmciLCJkaXNwbGF5IiwiZmxleEdyb3ciLCJjb2xvciIsImZvbnRGYW1pbHkiLCJmb250U2l6ZSIsImJhc2UiLCJtZCIsInRleHRUcmFuc2Zvcm0iLCJteCIsInciXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Navigation/index.js\n");
 
-;// CONCATENATED MODULE: ./src/components/Navigation/index.js
+/***/ }),
 
+/***/ "./node_modules/@fontsource/fredoka-one/index.css":
+/*!********************************************************!*\
+  !*** ./node_modules/@fontsource/fredoka-one/index.css ***!
+  \********************************************************/
+/***/ (() => {
 
-
-
-const Navigation = ({ basket , removeItem  })=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Flex, {
-        flexDirection: "row",
-        borderBottom: "solid 1px #ededed",
-        padding: ".5em",
-        justifyContent: "flex-end",
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(react_.Box, {
-                flexGrow: 1,
-                ml: 2,
-                children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Heading, {
-                    children: "clothify"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(Basket, {
-                basket: basket,
-                removeItem: removeItem
-            })
-        ]
-    });
-};
-/* harmony default export */ const components_Navigation = (Navigation);
-
-;// CONCATENATED MODULE: ./pages/_app.js
-
-
-
-
-function App({ Component , pageProps  }) {
-    const { 0: basket , 1: setBasket  } = (0,external_react_.useState)([]);
-    function updateBasket(itemToAdd) {
-        const existingItem = basket.find((item)=>{
-            return item.id === itemToAdd.id;
-        });
-        if (existingItem) {
-            existingItem.quantity++;
-        } else {
-            setBasket([
-                ...basket,
-                itemToAdd
-            ]);
-        }
-    }
-    function removeItem(itemToRemove) {
-        const indexToRemove = basket.findIndex((item)=>{
-            return item.id === itemToRemove.id;
-        });
-        if (indexToRemove > 0) {
-            setBasket([
-                ...basket.slice(0, indexToRemove),
-                ...basket.slice(indexToRemove + 1), 
-            ]);
-        } else {
-            setBasket([
-                ...basket.slice(indexToRemove + 1)
-            ]);
-        }
-    }
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.ChakraProvider, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(components_Navigation, {
-                basket: basket,
-                removeItem: removeItem
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "container",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
-                    ...pageProps,
-                    updateBasket: updateBasket
-                })
-            })
-        ]
-    });
-}
-/* harmony default export */ const _app = (App);
 
 
 /***/ }),
 
-/***/ 930:
+/***/ "@chakra-ui/react":
+/*!***********************************!*\
+  !*** external "@chakra-ui/react" ***!
+  \***********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("@chakra-ui/react");
 
 /***/ }),
 
-/***/ 689:
+/***/ "@emotion/styled":
+/*!**********************************!*\
+  !*** external "@emotion/styled" ***!
+  \**********************************/
 /***/ ((module) => {
 
+"use strict";
+module.exports = require("@emotion/styled");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react-icons/fi":
+/*!*********************************!*\
+  !*** external "react-icons/fi" ***!
+  \*********************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+"use strict";
+module.exports = require("react-icons/fi");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -252,7 +117,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(729));
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
 module.exports = __webpack_exports__;
 
 })();
